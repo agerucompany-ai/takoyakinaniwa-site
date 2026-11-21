@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>章魚燒酒場 Naniwa｜東京・丸之內</title>
+<meta name="description" content="本店以道地大阪“外酥內嫩”章魚燒、炸雞塊及章魚高湯關東煮為招牌。從東京車站丸之內南口步行3分鐘即可抵達。">
+<link rel="icon" href="../img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../store.css">
+<style>
+/* ===== タコのキャラクター（2026-11-22 オーナー「HPにもキャラ入れまくって」「こだわりを話させたり、新メニューを紹介させたり」） ===== */
+/* 色：紺 #0c1a38（地）／和紙の淡い緑 #eef1e6（明るい所）／タコの朱 #d2553f（差し色・予約） */
+.washi,#new-menu{background:#eef1e6}
+.tako-band{background:#e9efe1;padding:0;line-height:0}
+.reserve-band p{color:#fff}
+.reserve-band .btn{color:#d2553f;font-weight:600}
+.reserve-bar{background:#d2553f!important;color:#fff!important}
+.dark .person .role,.shop dt{color:#f3a28f}
+.person .role{color:#d2553f}
+.sec-title::after{content:"";display:block;width:44px;height:3px;margin:14px auto 0;border-radius:2px;background:#d2553f}
+.dark .sec-title::after{background:#f3a28f}
+.btn.solid{background:#0c1a38}
+.site-header.solid{background:#0c1a38}
+.tako-band img{width:100%;max-width:1400px;margin:0 auto;display:block}
+.say{display:flex;gap:12px;align-items:flex-start;margin:18px 0 6px;text-align:left}
+.say img{flex:0 0 64px;width:64px;height:64px;border-radius:50%;object-fit:cover;background:#fff}
+.say .bub{position:relative;background:#fff;color:#1a1a1a;border-radius:14px;padding:10px 14px;font-size:14px;line-height:1.8;font-family:var(--sans)}
+.say .bub::before{content:"";position:absolute;left:-7px;top:18px;border:7px solid transparent;border-left:0;border-right-color:#fff}
+.dark .say .bub{background:#f4efe3}
+.dark .say .bub::before{border-right-color:#f4efe3}
+
+.new-wrap{display:grid;grid-template-columns:240px 1fr;gap:32px;align-items:start}
+.new-wrap .tecchan{width:100%;max-width:240px;margin:0 auto;animation:takobob 2.4s ease-in-out infinite}
+.new-list{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.new-item{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.new-item img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.new-item div{padding:10px 14px 14px}
+.new-item b{display:block;font-size:16px}
+.new-item span{font-size:14px;color:var(--muted)}
+.new-item p{font-size:13px;line-height:1.8;margin-top:4px;font-family:var(--sans)}
+.big-bub{position:relative;background:#fff;border:2px solid #0c1a38;border-radius:18px;padding:14px 18px;font-size:16px;line-height:1.8;margin-bottom:18px;font-family:var(--sans)}
+.big-bub::after{content:"";position:absolute;left:46px;bottom:-12px;border:12px solid transparent;border-bottom:0;border-top-color:#0c1a38}
+.topping-band{background:#e9efe1;text-align:center;padding:0 0 28px}
+.topping-band img{width:100%;max-width:1200px;margin:0 auto 10px;display:block}
+.reserve-band{position:relative;overflow:visible}
+.reserve-band .yakiage{position:absolute;right:4%;bottom:-6px;width:120px;pointer-events:none}
+.shop-stamp{width:96px;margin:0 auto 12px;transform:rotate(-8deg)}
+.tako-float{position:fixed;left:10px;bottom:84px;z-index:55;display:flex;align-items:flex-end;gap:4px;text-decoration:none}
+.tako-float img{width:72px;animation:takobob 2.4s ease-in-out infinite;filter:drop-shadow(0 3px 6px rgba(0,0,0,.25))}
+.tako-float span{background:#fff;color:#0c1a38;border:2px solid #0c1a38;border-radius:12px;padding:4px 10px;font-size:12px;font-weight:700;font-family:var(--sans);margin-bottom:46px;white-space:nowrap}
+.foot-stamps{display:flex;justify-content:center;gap:10px;margin-bottom:16px}
+.foot-stamps img{width:48px;height:auto;opacity:.9}
+@keyframes takobob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-8px) rotate(2deg)}}
+@media (min-width:801px){.tako-float{bottom:24px;left:24px}.tako-float img{width:96px}}
+@media (max-width:800px){.new-wrap{grid-template-columns:1fr}.new-wrap .tecchan{max-width:170px}.new-list{grid-template-columns:1fr 1fr;gap:12px}.reserve-band .yakiage{width:84px;right:2%}}
+@media (prefers-reduced-motion:reduce){.tako-float img,.new-wrap .tecchan{animation:none}}
+</style>
+<!-- i18n:start -->
+<link rel="alternate" hreflang="ja" href="https://takoyakinaniwa.com/">
+<link rel="alternate" hreflang="en" href="https://takoyakinaniwa.com/en/">
+<link rel="alternate" hreflang="zh-Hans" href="https://takoyakinaniwa.com/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://takoyakinaniwa.com/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://takoyakinaniwa.com/ko/">
+<link rel="alternate" hreflang="x-default" href="https://takoyakinaniwa.com/">
+<link rel="canonical" href="https://takoyakinaniwa.com/zh-hant/">
+<!-- i18n:end -->
+</head>
+<body style="--main:#0c1a38;--accent:#d2553f">
+
+<header class="site-header">
+  <a class="brand" href="https://agerucompany-ai.github.io/ageruinc-site/" target="_blank" rel="noopener"><img src="../img/ageru.png" alt="AGERU inc."></a>
+  <div class="lang-switch" aria-label="Language"><a href="../index.html" hreflang="ja" lang="ja">日本語</a><a href="../en/index.html" hreflang="en" lang="en">EN</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant" class="on" aria-current="true">繁</a><a href="../ko/index.html" hreflang="ko" lang="ko">한</a></div>
+  <button class="menu-btn" aria-label="菜單">☰</button>
+  <nav>
+    <a href="#menu">招牌菜單</a>
+    <a href="#new-menu">新菜單</a>
+    <a href="menu.html">菜單</a>
+    <a href="#staff">員工介紹</a>
+    <a href="#shop">店鋪詳情</a>
+    <a href="https://agerucompany-ai.github.io/ageruinc-site/recruit.html" target="_blank" rel="noopener">招募資訊</a>
+    <a href="https://agerucompany-ai.github.io/ageruinc-site/company.html" target="_blank" rel="noopener">公司簡介</a>
+    <a class="nav-reserve" href="https://yoyaku.takoyakinaniwa.com/" target="_blank" rel="noopener">預約</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <video src="../video/hero.mp4" autoplay muted loop playsinline poster="../img/menu-takoyaki.jpg"></video>
+  <img class="logo" src="../img/logo.png" alt="章魚燒酒場 Naniwa">
+</div>
+
+
+<div class="tako-band"><img src="../img/chara/takoyaki-trio.jpg" alt="在鐵板上烤章魚燒的章魚們" loading="lazy"></div>
+
+
+<section class="dark" id="menu">
+  <div class="wrap">
+    <h2 class="sec-title fade">招牌菜單</h2>
+    <div class="menu-grid">
+      <div class="menu-item fade">
+        <img src="../img/menu-takoyaki.jpg" alt="章魚燒">
+        <h3>章魚燒</h3>
+        <div class="say"><img src="../img/chara/stamp1.webp" alt=""><div class="bub">我們的麵糊以昆布為基底，加入鰹魚高湯調和而成。單吃就很美味的「高湯」，搭配講究的“蓬鬆柔滑”口感，等你來品嚐！</div></div>
+        <p>我們的「章魚燒」講究“外酥內嫩”的口感，搭配單吃也美味的特製高湯。麵糊以昆布為基底，加入鰹魚高湯，呈現清爽卻充滿鮮味的道地大阪風味！</p>
+      </div>
+      <div class="menu-item fade">
+        <img src="../img/menu-karaage.jpg" alt="炸雞塊">
+        <h3>炸雞塊</h3>
+        <div class="say"><img src="../img/chara/stamp2.webp" alt=""><div class="bub">選用雞翅根、雞翅尖、雞胸肉三個部位，充分吸收秘傳高湯後酥炸，外酥內嫩、鮮美多汁。</div></div>
+        <p>嚴選雞翅根、雞翅尖及雞胸三個部位。雞翅根和雞翅尖將肉集中於尖端，雞胸則厚切，讓秘製高湯充分滲入，成就多汁美味的炸雞。</p>
+      </div>
+      <div class="menu-item fade">
+        <img src="../img/menu-oden.jpg" alt="章魚高湯關東煮">
+        <h3>章魚高湯關東煮</h3>
+        <div class="say"><img src="../img/chara/stamp3.webp" alt=""><div class="bub">這是我們章魚的鮮味滲透其中的高湯。吃完後，把章魚燒沾著高湯再吃，滋味更上一層樓。</div></div>
+        <p>以章魚鮮味熬煮的高湯，慢火燉煮各式食材，溫暖身心的章魚高湯關東煮。可作為章魚燒前的開胃小點，吃完後將章魚燒沾著高湯享用，更添風味。</p>
+      </div>
+    </div>
+    <p class="menu-more fade"><a class="btn" href="menu.html">查看全部菜單</a></p>
+  </div>
+</section>
+
+
+<section id="new-menu">
+  <div class="wrap">
+    <h2 class="sec-title fade">新菜單</h2>
+    <div class="new-wrap">
+      <img class="tecchan" src="../img/chara/yakiage.webp" alt="章魚燒酒場 Naniwa 的章魚">
+      <div>
+        <div class="big-bub fade">今天的推薦菜色來囉！章魚燒之餘，不妨試試這些美味。</div>
+        <div class="new-list" id="new-list"></div>
+        <p class="menu-more" style="margin-top:20px"><a class="btn solid" href="menu.html">查看全部菜單</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="topping-band"><img src="../img/chara/topping-lab.jpg" alt="研究配料的章魚" loading="lazy">
+  <div class="say" style="max-width:640px;margin:0 auto;padding:0 16px"><img src="../img/chara/stamp4.webp" alt=""><div class="bub">醬汁、鹽、日式高湯醬油、柚子醋，還有明太子美乃滋、蔥鹽檸檬、泡菜醬、起司……今天想選哪一種口味呢？</div></div>
+</div>
+
+<div class="reserve-band">
+  <img class="yakiage" src="../img/chara/yakiage.webp" alt="" loading="lazy">
+  <p>網路預約 24 小時隨時受理</p>
+  <a class="btn" href="https://yoyaku.takoyakinaniwa.com/" target="_blank" rel="noopener">立即預約<small class="ja-page">（日文頁面）</small></a>
+</div>
+
+
+<section id="staff">
+  <div class="wrap">
+    <h2 class="sec-title fade">員工介紹</h2>
+    <div class="person">
+      <img class="fade" src="../img/staff.jpg" alt="店長 川崎哲季（左）與副店長 大冨健清（右）">
+      <div class="fade">
+        <div class="who">
+          <div class="role">店長（照片左）</div>
+          <h3>川崎 哲季</h3>
+          <div class="career">32歲。前職：居酒屋店長</div>
+          <p>入社僅1個月即被選為新品牌創始成員，負責全菜單設計，從零打造品牌。憑藉獨特的前系統工程師分析力與豐富美食經驗，不斷追求獨一無二的美味與樂趣。</p>
+          <a class="note" href="https://note.com/tempura_oshio/n/n6367b9b56bcf" target="_blank" rel="noopener">“章魚燒”創業奮鬥記（note）</a>
+        </div>
+        <div class="who">
+          <div class="role">副店長（照片右）</div>
+          <h3>大冨 健清</h3>
+          <div class="career">26歲。前職：汽車維修廠</div>
+          <p>出身於籃球強校的體育好手。以開朗的服務和運動鍛鍊出的領導力，成為團隊的可靠支柱。與店長川崎攜手帶動現場氣氛，致力打造充滿活力與笑容的店舖！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="instagram" class="washi">
+  <div class="wrap">
+    <h2 class="sec-title fade">Instagram</h2>
+    <div class="insta fade">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/takoyaki_naniwa/" data-instgrm-version="14" style="width:100%;max-width:540px"></blockquote>
+    </div>
+    <p class="center" style="margin-top:24px"><a class="btn solid" href="https://www.instagram.com/takoyaki_naniwa/" target="_blank" rel="noopener">追蹤 @takoyaki_naniwa</a></p>
+  </div>
+</section>
+
+
+<section class="dark" id="shop">
+  <div class="wrap">
+    <h2 class="sec-title fade">店鋪詳情</h2>
+    <div class="shop">
+      <img class="fade" src="../img/store.jpg" alt="章魚燒酒場 Naniwa 店內環境">
+      <div class="info fade">
+        <img class="shop-stamp" src="../img/chara/stamp1.webp" alt="" loading="lazy">
+        <img class="logo" src="../img/logo.png" alt="章魚燒酒場 Naniwa">
+        <a class="tel" href="tel:0362756730">TEL 03-6275-6730</a>
+        <dl>
+          <dt>地址</dt><dd><a href="https://tabelog.com/tokyo/A1302/A130201/13298448/dtlmap/" target="_blank" rel="noopener">東京都千代田区丸の内1-10-12</a>
+（從東京車站丸之內南口步行3分鐘）</dd>
+          <dt>週一～週五</dt><dd>15:00 - 23:30（最後點餐 23:00）</dd>
+          <dt>週六・假日前後</dt><dd>12:00 - 23:00（最後點餐 22:30）</dd>
+          <dt>週日・國定假日</dt><dd>12:00 - 22:00（最後點餐 21:30）</dd>
+        </dl>
+        <div class="btns">
+          <a class="btn" href="https://yoyaku.takoyakinaniwa.com/" target="_blank" rel="noopener">立即預約<small class="ja-page">（日文頁面）</small></a>
+        </div>
+        <div class="btns" style="margin-top:12px">
+          <a class="btn ghost" href="https://tabelog.com/tokyo/A1302/A130201/13298448/" target="_blank" rel="noopener">食べログ</a>
+          <a class="btn ghost" href="https://www.hotpepper.jp/strJ003872441/" target="_blank" rel="noopener">ホットペッパー</a>
+          <a class="btn ghost" href="https://www.instagram.com/takoyaki_naniwa/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="tako-float" href="#new-menu" aria-label="查看新菜單"><img src="../img/chara/yakiage.webp" alt=""><span>有新菜單囉</span></a>
+
+<footer class="site-footer">
+  <div class="foot-stamps"><img src="../img/chara/stamp1.webp" alt=""><img src="../img/chara/stamp2.webp" alt=""><img src="../img/chara/stamp3.webp" alt=""><img src="../img/chara/stamp4.webp" alt=""></div>
+  <a href="https://agerucompany-ai.github.io/ageruinc-site/" target="_blank" rel="noopener"><img src="../img/ageru.png" alt="AGERU inc."></a>
+  營運單位：AGERU 株式會社
+  <small>© 章魚燒酒場 Naniwa</small>
+</footer>
+<script src="../store.js"></script>
+<script>
+// 新メニュー：menu.json の「本日のおすすめ」（無ければ写真のある料理の先頭）を 4 品
+(function () {
+  var box = document.getElementById('new-list'); if (!box) return;
+  var base = location.pathname.replace(/[^/]*$/, '');
+  var root = /\/(en|zh-hans|zh-hant|ko)\/$/.test(base) ? base.replace(/(en|zh-hans|zh-hant|ko)\/$/, '') : base;
+  fetch(root + 'menu.json').then(function (r) { return r.json(); }).then(function (d) {
+    var food = (d || []).filter(function (k) { return k.kind === '料理'; })[0] || { categories: [] };
+    var cat = food.categories.filter(function (c) { return /おすすめ|新/.test(c.name); })[0] || food.categories[0] || { items: [] };
+    var esc = function (t) { return String(t || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+    box.innerHTML = cat.items.filter(function (i) { return i.file && !/追加/.test(i.name); }).slice(0, 4).map(function (i) {
+      return '<div class="new-item"><img loading="lazy" src="' + root + 'menu-img/' + esc(i.file) + '" alt="' + esc(i.name) + '"><div><b>' + esc(i.name) + '</b><span>' + esc(i.price) + '</span>' + (i.desc ? '<p>' + esc(i.desc).slice(0, 60) + '</p>' : '') + '</div></div>';
+    }).join('');
+  }).catch(function () { box.style.display = 'none'; });
+})();
+</script>
+<script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>

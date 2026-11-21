@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Takoyaki Sakaba Naniwa | Tokyo Marunouchi</title>
+<meta name="description" content="A lively spot serving authentic Osaka-style fluffy takoyaki, karaage, and octopus broth oden. Just 3 minutes from Tokyo Station Marunouchi South Exit.">
+<link rel="icon" href="../img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../store.css">
+<style>
+/* ===== タコのキャラクター（2026-11-22 オーナー「HPにもキャラ入れまくって」「こだわりを話させたり、新メニューを紹介させたり」） ===== */
+/* 色：紺 #0c1a38（地）／和紙の淡い緑 #eef1e6（明るい所）／タコの朱 #d2553f（差し色・予約） */
+.washi,#new-menu{background:#eef1e6}
+.tako-band{background:#e9efe1;padding:0;line-height:0}
+.reserve-band p{color:#fff}
+.reserve-band .btn{color:#d2553f;font-weight:600}
+.reserve-bar{background:#d2553f!important;color:#fff!important}
+.dark .person .role,.shop dt{color:#f3a28f}
+.person .role{color:#d2553f}
+.sec-title::after{content:"";display:block;width:44px;height:3px;margin:14px auto 0;border-radius:2px;background:#d2553f}
+.dark .sec-title::after{background:#f3a28f}
+.btn.solid{background:#0c1a38}
+.site-header.solid{background:#0c1a38}
+.tako-band img{width:100%;max-width:1400px;margin:0 auto;display:block}
+.say{display:flex;gap:12px;align-items:flex-start;margin:18px 0 6px;text-align:left}
+.say img{flex:0 0 64px;width:64px;height:64px;border-radius:50%;object-fit:cover;background:#fff}
+.say .bub{position:relative;background:#fff;color:#1a1a1a;border-radius:14px;padding:10px 14px;font-size:14px;line-height:1.8;font-family:var(--sans)}
+.say .bub::before{content:"";position:absolute;left:-7px;top:18px;border:7px solid transparent;border-left:0;border-right-color:#fff}
+.dark .say .bub{background:#f4efe3}
+.dark .say .bub::before{border-right-color:#f4efe3}
+
+.new-wrap{display:grid;grid-template-columns:240px 1fr;gap:32px;align-items:start}
+.new-wrap .tecchan{width:100%;max-width:240px;margin:0 auto;animation:takobob 2.4s ease-in-out infinite}
+.new-list{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.new-item{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.new-item img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.new-item div{padding:10px 14px 14px}
+.new-item b{display:block;font-size:16px}
+.new-item span{font-size:14px;color:var(--muted)}
+.new-item p{font-size:13px;line-height:1.8;margin-top:4px;font-family:var(--sans)}
+.big-bub{position:relative;background:#fff;border:2px solid #0c1a38;border-radius:18px;padding:14px 18px;font-size:16px;line-height:1.8;margin-bottom:18px;font-family:var(--sans)}
+.big-bub::after{content:"";position:absolute;left:46px;bottom:-12px;border:12px solid transparent;border-bottom:0;border-top-color:#0c1a38}
+.topping-band{background:#e9efe1;text-align:center;padding:0 0 28px}
+.topping-band img{width:100%;max-width:1200px;margin:0 auto 10px;display:block}
+.reserve-band{position:relative;overflow:visible}
+.reserve-band .yakiage{position:absolute;right:4%;bottom:-6px;width:120px;pointer-events:none}
+.shop-stamp{width:96px;margin:0 auto 12px;transform:rotate(-8deg)}
+.tako-float{position:fixed;left:10px;bottom:84px;z-index:55;display:flex;align-items:flex-end;gap:4px;text-decoration:none}
+.tako-float img{width:72px;animation:takobob 2.4s ease-in-out infinite;filter:drop-shadow(0 3px 6px rgba(0,0,0,.25))}
+.tako-float span{background:#fff;color:#0c1a38;border:2px solid #0c1a38;border-radius:12px;padding:4px 10px;font-size:12px;font-weight:700;font-family:var(--sans);margin-bottom:46px;white-space:nowrap}
+.foot-stamps{display:flex;justify-content:center;gap:10px;margin-bottom:16px}
+.foot-stamps img{width:48px;height:auto;opacity:.9}
+@keyframes takobob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-8px) rotate(2deg)}}
+@media (min-width:801px){.tako-float{bottom:24px;left:24px}.tako-float img{width:96px}}
+@media (max-width:800px){.new-wrap{grid-template-columns:1fr}.new-wrap .tecchan{max-width:170px}.new-list{grid-template-columns:1fr 1fr;gap:12px}.reserve-band .yakiage{width:84px;right:2%}}
+@media (prefers-reduced-motion:reduce){.tako-float img,.new-wrap .tecchan{animation:none}}
+</style>
+<!-- i18n:start -->
+<link rel="alternate" hreflang="ja" href="https://takoyakinaniwa.com/">
+<link rel="alternate" hreflang="en" href="https://takoyakinaniwa.com/en/">
+<link rel="alternate" hreflang="zh-Hans" href="https://takoyakinaniwa.com/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://takoyakinaniwa.com/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://takoyakinaniwa.com/ko/">
+<link rel="alternate" hreflang="x-default" href="https://takoyakinaniwa.com/">
+<link rel="canonical" href="https://takoyakinaniwa.com/en/">
+<!-- i18n:end -->
+</head>
+<body style="--main:#0c1a38;--accent:#d2553f">
+
+<header class="site-header">
+  <a class="brand" href="https://agerucompany-ai.github.io/ageruinc-site/" target="_blank" rel="noopener"><img src="../img/ageru.png" alt="AGERU inc."></a>
+  <div class="lang-switch" aria-label="Language"><a href="../index.html" hreflang="ja" lang="ja">日本語</a><a href="../en/index.html" hreflang="en" lang="en" class="on" aria-current="true">EN</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁</a><a href="../ko/index.html" hreflang="ko" lang="ko">한</a></div>
+  <button class="menu-btn" aria-label="Menu">☰</button>
+  <nav>
+    <a href="#menu">Signature Dishes</a>
+    <a href="#new-menu">New Menu</a>
+    <a href="menu.html">Menu</a>
+    <a href="#staff">Meet Our Team</a>
+    <a href="#shop">Shop Details</a>
+    <a href="https://agerucompany-ai.github.io/ageruinc-site/recruit.html" target="_blank" rel="noopener">Careers</a>
+    <a href="https://agerucompany-ai.github.io/ageruinc-site/company.html" target="_blank" rel="noopener">Company</a>
+    <a class="nav-reserve" href="https://yoyaku.takoyakinaniwa.com/" target="_blank" rel="noopener">Reserve</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <video src="../video/hero.mp4" autoplay muted loop playsinline poster="../img/menu-takoyaki.jpg"></video>
+  <img class="logo" src="../img/logo.png" alt="Takoyaki Sakaba Naniwa">
+</div>
+
+
+<div class="tako-band"><img src="../img/chara/takoyaki-trio.jpg" alt="Octopus grilling takoyaki on the teppan" loading="lazy"></div>
+
+
+<section class="dark" id="menu">
+  <div class="wrap">
+    <h2 class="sec-title fade">Signature Dishes</h2>
+    <div class="menu-grid">
+      <div class="menu-item fade">
+        <img src="../img/menu-takoyaki.jpg" alt="Takoyaki (Octopus Balls)">
+        <h3>Takoyaki (Octopus Balls)</h3>
+        <div class="say"><img src="../img/chara/stamp1.webp" alt=""><div class="bub">Our batter is made with a special blend of kombu and bonito dashi. Enjoy the delicious flavor of our dashi as is, and savor the fluffy, melt-in-your-mouth texture we’re proud of!</div></div>
+        <p>Our takoyaki features a fluffy, creamy texture and a savory dashi broth that tastes delicious even on its own. The batter is made with a blend of kombu and bonito-based dashi, offering an authentic flavor that's light yet full of umami.</p>
+      </div>
+      <div class="menu-item fade">
+        <img src="../img/menu-karaage.jpg" alt="Karaage (Japanese Fried Chicken)">
+        <h3>Karaage (Japanese Fried Chicken)</h3>
+        <div class="say"><img src="../img/chara/stamp2.webp" alt=""><div class="bub">We use three cuts: drumette, wing, and breast. Each is soaked in our secret dashi and fried to juicy perfection.</div></div>
+        <p>We use three cuts: drumettes, wings, and breast. The wings and drumettes are packed with meat at the tip, while the breast is cut thick, allowing our secret dashi to soak in for a juicy finish.</p>
+      </div>
+      <div class="menu-item fade">
+        <img src="../img/menu-oden.jpg" alt="Tako Dashi Oden (Octopus Broth Oden)">
+        <h3>Tako Dashi Oden (Octopus Broth Oden)</h3>
+        <div class="say"><img src="../img/chara/stamp3.webp" alt=""><div class="bub">Our dashi is infused with the rich flavor of octopus. Try dipping your takoyaki in the leftover dashi for an extra burst of taste.</div></div>
+        <p>Our oden is slowly simmered in a rich octopus broth, warming both body and soul. Enjoy it as a starter before your takoyaki, or dip your takoyaki in the leftover broth for an extra treat.</p>
+      </div>
+    </div>
+    <p class="menu-more fade"><a class="btn" href="menu.html">View Full Menu</a></p>
+  </div>
+</section>
+
+
+<section id="new-menu">
+  <div class="wrap">
+    <h2 class="sec-title fade">New Menu</h2>
+    <div class="new-wrap">
+      <img class="tecchan" src="../img/chara/yakiage.webp" alt="The octopus of Takoyaki Sakaba Naniwa">
+      <div>
+        <div class="big-bub fade">Here are today’s recommendations! Perfect for enjoying between bites of takoyaki.</div>
+        <div class="new-list" id="new-list"></div>
+        <p class="menu-more" style="margin-top:20px"><a class="btn solid" href="menu.html">View Full Menu</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="topping-band"><img src="../img/chara/topping-lab.jpg" alt="Octopus experimenting with toppings" loading="lazy">
+  <div class="say" style="max-width:640px;margin:0 auto;padding:0 16px"><img src="../img/chara/stamp4.webp" alt=""><div class="bub">Choose from sauce, salt, dashi soy sauce, ponzu, spicy cod roe mayo, green onion with lemon salt, kimchi sauce, cheese, and more. Which flavor will you try today?</div></div>
+</div>
+
+<div class="reserve-band">
+  <img class="yakiage" src="../img/chara/yakiage.webp" alt="" loading="lazy">
+  <p>Online reservations available 24 hours</p>
+  <a class="btn" href="https://yoyaku.takoyakinaniwa.com/" target="_blank" rel="noopener">Reserve Here<small class="ja-page">(Japanese page)</small></a>
+</div>
+
+
+<section id="staff">
+  <div class="wrap">
+    <h2 class="sec-title fade">Meet Our Team</h2>
+    <div class="person">
+      <img class="fade" src="../img/staff.jpg" alt="Manager Tetsuki Kawasaki (left) and Assistant Manager Kensei Otomi (right)">
+      <div class="fade">
+        <div class="who">
+          <div class="role">Manager (left in photo)</div>
+          <h3>Tetsuki Kawasaki</h3>
+          <div class="career">Age 32. Previous job: Izakaya Manager</div>
+          <p>Selected as a founding member for our new concept just one month after joining. He created the entire menu and built the brand from scratch. With a unique background as a former systems engineer, his analytical skills and extensive food exploration experience help us deliver a one-of-a-kind taste and fun atmosphere.</p>
+          <a class="note" href="https://note.com/tempura_oshio/n/n6367b9b56bcf" target="_blank" rel="noopener">"Takoyaki" Launch Story (note)</a>
+        </div>
+        <div class="who">
+          <div class="role">Assistant Manager (right in photo)</div>
+          <h3>Kensei Otomi</h3>
+          <div class="career">Age 26. Previous job: Auto Repair Shop</div>
+          <p>A former basketball team standout, he brings energy and strong leadership to our team. With his cheerful service and teamwork, he and Manager Kawasaki create a lively, welcoming space full of smiles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="instagram" class="washi">
+  <div class="wrap">
+    <h2 class="sec-title fade">Instagram</h2>
+    <div class="insta fade">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/takoyaki_naniwa/" data-instgrm-version="14" style="width:100%;max-width:540px"></blockquote>
+    </div>
+    <p class="center" style="margin-top:24px"><a class="btn solid" href="https://www.instagram.com/takoyaki_naniwa/" target="_blank" rel="noopener">Follow @takoyaki_naniwa</a></p>
+  </div>
+</section>
+
+
+<section class="dark" id="shop">
+  <div class="wrap">
+    <h2 class="sec-title fade">Shop Details</h2>
+    <div class="shop">
+      <img class="fade" src="../img/store.jpg" alt="Inside Takoyaki Sakaba Naniwa">
+      <div class="info fade">
+        <img class="shop-stamp" src="../img/chara/stamp1.webp" alt="" loading="lazy">
+        <img class="logo" src="../img/logo.png" alt="Takoyaki Sakaba Naniwa">
+        <a class="tel" href="tel:0362756730">TEL 03-6275-6730</a>
+        <dl>
+          <dt>Address</dt><dd><a href="https://tabelog.com/tokyo/A1302/A130201/13298448/dtlmap/" target="_blank" rel="noopener">1-10-12 Marunouchi, Chiyoda-ku, Tokyo<br>東京都千代田区丸の内1-10-12</a>
+(3 min walk from Tokyo Station Marunouchi South Exit)</dd>
+          <dt>Mon–Fri</dt><dd>15:00 - 23:30 (L.O. 23:00)</dd>
+          <dt>Sat &amp; Day Before/After Public Holidays</dt><dd>12:00 - 23:00 (L.O. 22:30)</dd>
+          <dt>Sun, public holidays</dt><dd>12:00 - 22:00 (L.O. 21:30)</dd>
+        </dl>
+        <div class="btns">
+          <a class="btn" href="https://yoyaku.takoyakinaniwa.com/" target="_blank" rel="noopener">Reserve Here<small class="ja-page">(Japanese page)</small></a>
+        </div>
+        <div class="btns" style="margin-top:12px">
+          <a class="btn ghost" href="https://tabelog.com/tokyo/A1302/A130201/13298448/" target="_blank" rel="noopener">Tabelog</a>
+          <a class="btn ghost" href="https://www.hotpepper.jp/strJ003872441/" target="_blank" rel="noopener">Hot Pepper</a>
+          <a class="btn ghost" href="https://www.instagram.com/takoyaki_naniwa/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="tako-float" href="#new-menu" aria-label="See the new menu"><img src="../img/chara/yakiage.webp" alt=""><span>We have new menu items!</span></a>
+
+<footer class="site-footer">
+  <div class="foot-stamps"><img src="../img/chara/stamp1.webp" alt=""><img src="../img/chara/stamp2.webp" alt=""><img src="../img/chara/stamp3.webp" alt=""><img src="../img/chara/stamp4.webp" alt=""></div>
+  <a href="https://agerucompany-ai.github.io/ageruinc-site/" target="_blank" rel="noopener"><img src="../img/ageru.png" alt="AGERU inc."></a>
+  Operated by: AGERU Inc.
+  <small>© Takoyaki Sakaba Naniwa</small>
+</footer>
+<script src="../store.js"></script>
+<script>
+// 新メニュー：menu.json の「本日のおすすめ」（無ければ写真のある料理の先頭）を 4 品
+(function () {
+  var box = document.getElementById('new-list'); if (!box) return;
+  var base = location.pathname.replace(/[^/]*$/, '');
+  var root = /\/(en|zh-hans|zh-hant|ko)\/$/.test(base) ? base.replace(/(en|zh-hans|zh-hant|ko)\/$/, '') : base;
+  fetch(root + 'menu.json').then(function (r) { return r.json(); }).then(function (d) {
+    var food = (d || []).filter(function (k) { return k.kind === '料理'; })[0] || { categories: [] };
+    var cat = food.categories.filter(function (c) { return /おすすめ|新/.test(c.name); })[0] || food.categories[0] || { items: [] };
+    var esc = function (t) { return String(t || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+    box.innerHTML = cat.items.filter(function (i) { return i.file && !/追加/.test(i.name); }).slice(0, 4).map(function (i) {
+      return '<div class="new-item"><img loading="lazy" src="' + root + 'menu-img/' + esc(i.file) + '" alt="' + esc(i.name) + '"><div><b>' + esc(i.name) + '</b><span>' + esc(i.price) + '</span>' + (i.desc ? '<p>' + esc(i.desc).slice(0, 60) + '</p>' : '') + '</div></div>';
+    }).join('');
+  }).catch(function () { box.style.display = 'none'; });
+})();
+</script>
+<script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>

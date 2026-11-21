@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>다코야키 사카바 나니와｜도쿄・마루노우치</title>
+<meta name="description" content="오사카 본고장의 &#x27;부드럽고 촉촉한&#x27; 다코야키와 가라아게, 타코 다시 오뎅이 대표 메뉴인 사카바입니다.
+도쿄역 마루노우치 남쪽 출구에서 도보 3분 거리입니다.">
+<link rel="icon" href="../img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../store.css">
+<style>
+/* ===== タコのキャラクター（2026-11-22 オーナー「HPにもキャラ入れまくって」「こだわりを話させたり、新メニューを紹介させたり」） ===== */
+/* 色：紺 #0c1a38（地）／和紙の淡い緑 #eef1e6（明るい所）／タコの朱 #d2553f（差し色・予約） */
+.washi,#new-menu{background:#eef1e6}
+.tako-band{background:#e9efe1;padding:0;line-height:0}
+.reserve-band p{color:#fff}
+.reserve-band .btn{color:#d2553f;font-weight:600}
+.reserve-bar{background:#d2553f!important;color:#fff!important}
+.dark .person .role,.shop dt{color:#f3a28f}
+.person .role{color:#d2553f}
+.sec-title::after{content:"";display:block;width:44px;height:3px;margin:14px auto 0;border-radius:2px;background:#d2553f}
+.dark .sec-title::after{background:#f3a28f}
+.btn.solid{background:#0c1a38}
+.site-header.solid{background:#0c1a38}
+.tako-band img{width:100%;max-width:1400px;margin:0 auto;display:block}
+.say{display:flex;gap:12px;align-items:flex-start;margin:18px 0 6px;text-align:left}
+.say img{flex:0 0 64px;width:64px;height:64px;border-radius:50%;object-fit:cover;background:#fff}
+.say .bub{position:relative;background:#fff;color:#1a1a1a;border-radius:14px;padding:10px 14px;font-size:14px;line-height:1.8;font-family:var(--sans)}
+.say .bub::before{content:"";position:absolute;left:-7px;top:18px;border:7px solid transparent;border-left:0;border-right-color:#fff}
+.dark .say .bub{background:#f4efe3}
+.dark .say .bub::before{border-right-color:#f4efe3}
+
+.new-wrap{display:grid;grid-template-columns:240px 1fr;gap:32px;align-items:start}
+.new-wrap .tecchan{width:100%;max-width:240px;margin:0 auto;animation:takobob 2.4s ease-in-out infinite}
+.new-list{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.new-item{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.new-item img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.new-item div{padding:10px 14px 14px}
+.new-item b{display:block;font-size:16px}
+.new-item span{font-size:14px;color:var(--muted)}
+.new-item p{font-size:13px;line-height:1.8;margin-top:4px;font-family:var(--sans)}
+.big-bub{position:relative;background:#fff;border:2px solid #0c1a38;border-radius:18px;padding:14px 18px;font-size:16px;line-height:1.8;margin-bottom:18px;font-family:var(--sans)}
+.big-bub::after{content:"";position:absolute;left:46px;bottom:-12px;border:12px solid transparent;border-bottom:0;border-top-color:#0c1a38}
+.topping-band{background:#e9efe1;text-align:center;padding:0 0 28px}
+.topping-band img{width:100%;max-width:1200px;margin:0 auto 10px;display:block}
+.reserve-band{position:relative;overflow:visible}
+.reserve-band .yakiage{position:absolute;right:4%;bottom:-6px;width:120px;pointer-events:none}
+.shop-stamp{width:96px;margin:0 auto 12px;transform:rotate(-8deg)}
+.tako-float{position:fixed;left:10px;bottom:84px;z-index:55;display:flex;align-items:flex-end;gap:4px;text-decoration:none}
+.tako-float img{width:72px;animation:takobob 2.4s ease-in-out infinite;filter:drop-shadow(0 3px 6px rgba(0,0,0,.25))}
+.tako-float span{background:#fff;color:#0c1a38;border:2px solid #0c1a38;border-radius:12px;padding:4px 10px;font-size:12px;font-weight:700;font-family:var(--sans);margin-bottom:46px;white-space:nowrap}
+.foot-stamps{display:flex;justify-content:center;gap:10px;margin-bottom:16px}
+.foot-stamps img{width:48px;height:auto;opacity:.9}
+@keyframes takobob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-8px) rotate(2deg)}}
+@media (min-width:801px){.tako-float{bottom:24px;left:24px}.tako-float img{width:96px}}
+@media (max-width:800px){.new-wrap{grid-template-columns:1fr}.new-wrap .tecchan{max-width:170px}.new-list{grid-template-columns:1fr 1fr;gap:12px}.reserve-band .yakiage{width:84px;right:2%}}
+@media (prefers-reduced-motion:reduce){.tako-float img,.new-wrap .tecchan{animation:none}}
+</style>
+<!-- i18n:start -->
+<link rel="alternate" hreflang="ja" href="https://takoyakinaniwa.com/">
+<link rel="alternate" hreflang="en" href="https://takoyakinaniwa.com/en/">
+<link rel="alternate" hreflang="zh-Hans" href="https://takoyakinaniwa.com/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://takoyakinaniwa.com/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://takoyakinaniwa.com/ko/">
+<link rel="alternate" hreflang="x-default" href="https://takoyakinaniwa.com/">
+<link rel="canonical" href="https://takoyakinaniwa.com/ko/">
+<!-- i18n:end -->
+</head>
+<body style="--main:#0c1a38;--accent:#d2553f">
+
+<header class="site-header">
+  <a class="brand" href="https://agerucompany-ai.github.io/ageruinc-site/" target="_blank" rel="noopener"><img src="../img/ageru.png" alt="AGERU inc."></a>
+  <div class="lang-switch" aria-label="Language"><a href="../index.html" hreflang="ja" lang="ja">日本語</a><a href="../en/index.html" hreflang="en" lang="en">EN</a><a href="../zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简</a><a href="../zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁</a><a href="../ko/index.html" hreflang="ko" lang="ko" class="on" aria-current="true">한</a></div>
+  <button class="menu-btn" aria-label="메뉴">☰</button>
+  <nav>
+    <a href="#menu">대표 메뉴</a>
+    <a href="#new-menu">신메뉴</a>
+    <a href="menu.html">메뉴</a>
+    <a href="#staff">직원 소개</a>
+    <a href="#shop">매장 정보</a>
+    <a href="https://agerucompany-ai.github.io/ageruinc-site/recruit.html" target="_blank" rel="noopener">채용 정보</a>
+    <a href="https://agerucompany-ai.github.io/ageruinc-site/company.html" target="_blank" rel="noopener">회사 소개</a>
+    <a class="nav-reserve" href="https://yoyaku.takoyakinaniwa.com/" target="_blank" rel="noopener">예약</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <video src="../video/hero.mp4" autoplay muted loop playsinline poster="../img/menu-takoyaki.jpg"></video>
+  <img class="logo" src="../img/logo.png" alt="다코야키 사카바 나니와">
+</div>
+
+
+<div class="tako-band"><img src="../img/chara/takoyaki-trio.jpg" alt="철판에서 다코야키를 굽는 문어들" loading="lazy"></div>
+
+
+<section class="dark" id="menu">
+  <div class="wrap">
+    <h2 class="sec-title fade">대표 메뉴</h2>
+    <div class="menu-grid">
+      <div class="menu-item fade">
+        <img src="../img/menu-takoyaki.jpg" alt="다코야키 (문어볼)">
+        <h3>다코야키 (문어볼)</h3>
+        <div class="say"><img src="../img/chara/stamp1.webp" alt=""><div class="bub">반죽에는 다시마를 기본으로 가쓰오부시를 더한 혼합 육수를 사용합니다. 그냥 먹어도 맛있는 '다시'와, '푹신하고 부드러운' 식감에 정성을 담았습니다!</div></div>
+        <p>저희 '다코야키'는 부드럽고 촉촉한 식감과, 그대로 드셔도 맛있는 '다시(육수)'에 정성을 담았습니다.<br>반죽에는 다시마와 가쓰오부시를 더한 혼합 육수를 사용하여, 담백하면서도 깊은 감칠맛을 느낄 수 있는 오사카 본고장의 맛을 선사합니다!</p>
+      </div>
+      <div class="menu-item fade">
+        <img src="../img/menu-karaage.jpg" alt="가라아게 (닭튀김)">
+        <h3>가라아게 (닭튀김)</h3>
+        <div class="say"><img src="../img/chara/stamp2.webp" alt=""><div class="bub">닭날개, 닭봉, 닭가슴살 세 가지 부위를 사용합니다. 비법 육수를 듬뿍 머금게 해서, 육즙 가득하게 튀겨냈어요.</div></div>
+        <p>닭날개, 닭봉, 가슴살 세 부위를 사용합니다.<br>닭날개와 닭봉은 살을 끝에 모으고, 가슴살은 두툼하게 썰어 비법 육수를 듬뿍 머금게 하여, 육즙 가득한 맛을 완성했습니다.</p>
+      </div>
+      <div class="menu-item fade">
+        <img src="../img/menu-oden.jpg" alt="타코 다시 오뎅 (문어 육수 오뎅)">
+        <h3>타코 다시 오뎅 (문어 육수 오뎅)</h3>
+        <div class="say"><img src="../img/chara/stamp3.webp" alt=""><div class="bub">저희 문어의 감칠맛이 스며든 육수입니다. 다 드신 후 남은 육수에 다코야키를 찍어 드시면 더욱 맛있어요.</div></div>
+        <p>문어의 감칠맛이 우러난 육수로 천천히 끓여낸, 마음과 몸을 따뜻하게 해주는 타코 다시 오뎅입니다.<br>다코야키를 드시기 전에 곁들이셔도 좋고, 오뎅을 다 드신 후 남은 육수에 다코야키를 찍어 드시면 더욱 맛있습니다.</p>
+      </div>
+    </div>
+    <p class="menu-more fade"><a class="btn" href="menu.html">전체 메뉴 보기</a></p>
+  </div>
+</section>
+
+
+<section id="new-menu">
+  <div class="wrap">
+    <h2 class="sec-title fade">신메뉴</h2>
+    <div class="new-wrap">
+      <img class="tecchan" src="../img/chara/yakiage.webp" alt="다코야키 사카바 나니와의 문어">
+      <div>
+        <div class="big-bub fade">오늘의 추천 메뉴를 소개합니다! 다코야키 사이에 곁들여 보세요.</div>
+        <div class="new-list" id="new-list"></div>
+        <p class="menu-more" style="margin-top:20px"><a class="btn solid" href="menu.html">전체 메뉴 보기</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="topping-band"><img src="../img/chara/topping-lab.jpg" alt="토핑을 연구하는 문어" loading="lazy">
+  <div class="say" style="max-width:640px;margin:0 auto;padding:0 16px"><img src="../img/chara/stamp4.webp" alt=""><div class="bub">소스, 소금, 다시 간장, 폰즈, 명란 마요, 파소금 레몬, 소스 김치, 치즈 등… 오늘은 어떤 맛으로 드실래요?</div></div>
+</div>
+
+<div class="reserve-band">
+  <img class="yakiage" src="../img/chara/yakiage.webp" alt="" loading="lazy">
+  <p>온라인 예약은 24시간 언제든지</p>
+  <a class="btn" href="https://yoyaku.takoyakinaniwa.com/" target="_blank" rel="noopener">예약하기<small class="ja-page">(일본어 페이지)</small></a>
+</div>
+
+
+<section id="staff">
+  <div class="wrap">
+    <h2 class="sec-title fade">직원 소개</h2>
+    <div class="person">
+      <img class="fade" src="../img/staff.jpg" alt="점장 가와사키 데츠키(왼쪽)와 부점장 오오토미 켄세이(오른쪽)">
+      <div class="fade">
+        <div class="who">
+          <div class="role">점장 (사진 왼쪽)</div>
+          <h3>가와사키 데츠키</h3>
+          <div class="career">32세. 이전 직업: 이자카야 점장</div>
+          <p>입사 단 1개월 만에 새로운 업종의 창립 멤버로 발탁되어, 전 메뉴를 직접 고안하고 브랜드를 처음부터 세운 주역입니다.<br>특이한 전직 SE(시스템 엔지니어)로서의 분석력과 풍부한 맛집 탐방 경험을 바탕으로, 저희만의 독특한 맛과 즐거움을 계속해서 추구하고 있습니다.</p>
+          <a class="note" href="https://note.com/tempura_oshio/n/n6367b9b56bcf" target="_blank" rel="noopener">'다코야키' 창업 도전기 (note)</a>
+        </div>
+        <div class="who">
+          <div class="role">부점장 (사진 오른쪽)</div>
+          <h3>오오토미 켄세이</h3>
+          <div class="career">26세. 이전 직업: 자동차 정비공장</div>
+          <p>농구 명문교 출신의 에너지 넘치는 체육인입니다.<br>밝은 서비스와 동아리에서 다져진 뛰어난 리더십으로 팀을 이끄는 든든한 존재입니다.<br>점장 가와사키와 함께 매장을 활기차게 이끌며, 활력과 미소가 넘치는 가게를 만들기 위해 힘쓰고 있습니다!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="instagram" class="washi">
+  <div class="wrap">
+    <h2 class="sec-title fade">Instagram</h2>
+    <div class="insta fade">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/takoyaki_naniwa/" data-instgrm-version="14" style="width:100%;max-width:540px"></blockquote>
+    </div>
+    <p class="center" style="margin-top:24px"><a class="btn solid" href="https://www.instagram.com/takoyaki_naniwa/" target="_blank" rel="noopener">@takoyaki_naniwa 팔로우하기</a></p>
+  </div>
+</section>
+
+
+<section class="dark" id="shop">
+  <div class="wrap">
+    <h2 class="sec-title fade">매장 정보</h2>
+    <div class="shop">
+      <img class="fade" src="../img/store.jpg" alt="다코야키 사카바 나니와 매장 내부">
+      <div class="info fade">
+        <img class="shop-stamp" src="../img/chara/stamp1.webp" alt="" loading="lazy">
+        <img class="logo" src="../img/logo.png" alt="다코야키 사카바 나니와">
+        <a class="tel" href="tel:0362756730">TEL 03-6275-6730</a>
+        <dl>
+          <dt>주소</dt><dd><a href="https://tabelog.com/tokyo/A1302/A130201/13298448/dtlmap/" target="_blank" rel="noopener">도쿄도 치요다구 마루노우치 1-10-12<br>東京都千代田区丸の内1-10-12</a>
+(도쿄역 마루노우치 남쪽 출구에서 도보 3분)</dd>
+          <dt>월–금</dt><dd>15:00 - 23:30 (라스트 오더 23:00)</dd>
+          <dt>토・공휴일 전후</dt><dd>12:00 - 23:00 (라스트 오더 22:30)</dd>
+          <dt>일・공휴일</dt><dd>12:00 - 22:00 (라스트 오더 21:30)</dd>
+        </dl>
+        <div class="btns">
+          <a class="btn" href="https://yoyaku.takoyakinaniwa.com/" target="_blank" rel="noopener">예약하기<small class="ja-page">(일본어 페이지)</small></a>
+        </div>
+        <div class="btns" style="margin-top:12px">
+          <a class="btn ghost" href="https://tabelog.com/tokyo/A1302/A130201/13298448/" target="_blank" rel="noopener">타베로그</a>
+          <a class="btn ghost" href="https://www.hotpepper.jp/strJ003872441/" target="_blank" rel="noopener">핫페퍼</a>
+          <a class="btn ghost" href="https://www.instagram.com/takoyaki_naniwa/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="tako-float" href="#new-menu" aria-label="신메뉴 보기"><img src="../img/chara/yakiage.webp" alt=""><span>신메뉴가 준비되어 있습니다</span></a>
+
+<footer class="site-footer">
+  <div class="foot-stamps"><img src="../img/chara/stamp1.webp" alt=""><img src="../img/chara/stamp2.webp" alt=""><img src="../img/chara/stamp3.webp" alt=""><img src="../img/chara/stamp4.webp" alt=""></div>
+  <a href="https://agerucompany-ai.github.io/ageruinc-site/" target="_blank" rel="noopener"><img src="../img/ageru.png" alt="AGERU inc."></a>
+  운영: 주식회사 AGERU
+  <small>© 다코야키 사카바 나니와</small>
+</footer>
+<script src="../store.js"></script>
+<script>
+// 新メニュー：menu.json の「本日のおすすめ」（無ければ写真のある料理の先頭）を 4 品
+(function () {
+  var box = document.getElementById('new-list'); if (!box) return;
+  var base = location.pathname.replace(/[^/]*$/, '');
+  var root = /\/(en|zh-hans|zh-hant|ko)\/$/.test(base) ? base.replace(/(en|zh-hans|zh-hant|ko)\/$/, '') : base;
+  fetch(root + 'menu.json').then(function (r) { return r.json(); }).then(function (d) {
+    var food = (d || []).filter(function (k) { return k.kind === '料理'; })[0] || { categories: [] };
+    var cat = food.categories.filter(function (c) { return /おすすめ|新/.test(c.name); })[0] || food.categories[0] || { items: [] };
+    var esc = function (t) { return String(t || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+    box.innerHTML = cat.items.filter(function (i) { return i.file && !/追加/.test(i.name); }).slice(0, 4).map(function (i) {
+      return '<div class="new-item"><img loading="lazy" src="' + root + 'menu-img/' + esc(i.file) + '" alt="' + esc(i.name) + '"><div><b>' + esc(i.name) + '</b><span>' + esc(i.price) + '</span>' + (i.desc ? '<p>' + esc(i.desc).slice(0, 60) + '</p>' : '') + '</div></div>';
+    }).join('');
+  }).catch(function () { box.style.display = 'none'; });
+})();
+</script>
+<script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>

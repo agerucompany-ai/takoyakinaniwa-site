@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>たこ焼き酒場 なにわ｜東京・丸の内</title>
+<meta name="description" content="本場大阪の“ふわとろ”たこ焼きと、から揚げ・タコだしおでんが看板の酒場。東京駅丸の内南口から徒歩3分。">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="store.css">
+<style>
+/* ===== タコのキャラクター（2026-11-22 オーナー「HPにもキャラ入れまくって」「こだわりを話させたり、新メニューを紹介させたり」） ===== */
+/* 色：紺 #0c1a38（地）／和紙の淡い緑 #eef1e6（明るい所）／タコの朱 #d2553f（差し色・予約） */
+.washi,#new-menu{background:#eef1e6}
+.tako-band{background:#e9efe1;padding:0;line-height:0}
+.reserve-band p{color:#fff}
+.reserve-band .btn{color:#d2553f;font-weight:600}
+.reserve-bar{background:#d2553f!important;color:#fff!important}
+.dark .person .role,.shop dt{color:#f3a28f}
+.person .role{color:#d2553f}
+.sec-title::after{content:"";display:block;width:44px;height:3px;margin:14px auto 0;border-radius:2px;background:#d2553f}
+.dark .sec-title::after{background:#f3a28f}
+.btn.solid{background:#0c1a38}
+.site-header.solid{background:#0c1a38}
+.tako-band img{width:100%;max-width:1400px;margin:0 auto;display:block}
+.say{display:flex;gap:12px;align-items:flex-start;margin:18px 0 6px;text-align:left}
+.say img{flex:0 0 64px;width:64px;height:64px;border-radius:50%;object-fit:cover;background:#fff}
+.say .bub{position:relative;background:#fff;color:#1a1a1a;border-radius:14px;padding:10px 14px;font-size:14px;line-height:1.8;font-family:var(--sans)}
+.say .bub::before{content:"";position:absolute;left:-7px;top:18px;border:7px solid transparent;border-left:0;border-right-color:#fff}
+.dark .say .bub{background:#f4efe3}
+.dark .say .bub::before{border-right-color:#f4efe3}
+
+.new-wrap{display:grid;grid-template-columns:240px 1fr;gap:32px;align-items:start}
+.new-wrap .tecchan{width:100%;max-width:240px;margin:0 auto;animation:takobob 2.4s ease-in-out infinite}
+.new-list{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.new-item{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.new-item img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.new-item div{padding:10px 14px 14px}
+.new-item b{display:block;font-size:16px}
+.new-item span{font-size:14px;color:var(--muted)}
+.new-item p{font-size:13px;line-height:1.8;margin-top:4px;font-family:var(--sans)}
+.big-bub{position:relative;background:#fff;border:2px solid #0c1a38;border-radius:18px;padding:14px 18px;font-size:16px;line-height:1.8;margin-bottom:18px;font-family:var(--sans)}
+.big-bub::after{content:"";position:absolute;left:46px;bottom:-12px;border:12px solid transparent;border-bottom:0;border-top-color:#0c1a38}
+.topping-band{background:#e9efe1;text-align:center;padding:0 0 28px}
+.topping-band img{width:100%;max-width:1200px;margin:0 auto 10px;display:block}
+.reserve-band{position:relative;overflow:visible}
+.reserve-band .yakiage{position:absolute;right:4%;bottom:-6px;width:120px;pointer-events:none}
+.shop-stamp{width:96px;margin:0 auto 12px;transform:rotate(-8deg)}
+.tako-float{position:fixed;left:10px;bottom:84px;z-index:55;display:flex;align-items:flex-end;gap:4px;text-decoration:none}
+.tako-float img{width:72px;animation:takobob 2.4s ease-in-out infinite;filter:drop-shadow(0 3px 6px rgba(0,0,0,.25))}
+.tako-float span{background:#fff;color:#0c1a38;border:2px solid #0c1a38;border-radius:12px;padding:4px 10px;font-size:12px;font-weight:700;font-family:var(--sans);margin-bottom:46px;white-space:nowrap}
+.foot-stamps{display:flex;justify-content:center;gap:10px;margin-bottom:16px}
+.foot-stamps img{width:48px;height:auto;opacity:.9}
+@keyframes takobob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-8px) rotate(2deg)}}
+@media (min-width:801px){.tako-float{bottom:24px;left:24px}.tako-float img{width:96px}}
+@media (max-width:800px){.new-wrap{grid-template-columns:1fr}.new-wrap .tecchan{max-width:170px}.new-list{grid-template-columns:1fr 1fr;gap:12px}.reserve-band .yakiage{width:84px;right:2%}}
+@media (prefers-reduced-motion:reduce){.tako-float img,.new-wrap .tecchan{animation:none}}
+</style>
+<!-- i18n:start -->
+<link rel="alternate" hreflang="ja" href="https://takoyakinaniwa.com/">
+<link rel="alternate" hreflang="en" href="https://takoyakinaniwa.com/en/">
+<link rel="alternate" hreflang="zh-Hans" href="https://takoyakinaniwa.com/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://takoyakinaniwa.com/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://takoyakinaniwa.com/ko/">
+<link rel="alternate" hreflang="x-default" href="https://takoyakinaniwa.com/">
+<link rel="canonical" href="https://takoyakinaniwa.com/">
+<!-- i18n:end -->
+</head>
+<body style="--main:#0c1a38;--accent:#d2553f">
+
+<header class="site-header">
+  <a class="brand" href="https://agerucompany-ai.github.io/ageruinc-site/" target="_blank" rel="noopener"><img src="img/ageru.png" alt="AGERU inc."></a>
+  <div class="lang-switch" aria-label="Language"><a href="index.html" hreflang="ja" lang="ja" class="on" aria-current="true">日本語</a><a href="en/index.html" hreflang="en" lang="en">EN</a><a href="zh-hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简</a><a href="zh-hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁</a><a href="ko/index.html" hreflang="ko" lang="ko">한</a></div>
+  <button class="menu-btn" aria-label="メニュー">☰</button>
+  <nav>
+    <a href="#menu">看板メニュー</a>
+    <a href="#new-menu">新メニュー</a>
+    <a href="menu.html">メニュー</a>
+    <a href="#staff">社員紹介</a>
+    <a href="#shop">店舗詳細</a>
+    <a href="https://agerucompany-ai.github.io/ageruinc-site/recruit.html" target="_blank" rel="noopener">採用情報</a>
+    <a href="https://agerucompany-ai.github.io/ageruinc-site/company.html" target="_blank" rel="noopener">会社概要</a>
+    <a class="nav-reserve" href="https://yoyaku.takoyakinaniwa.com/" target="_blank" rel="noopener">ご予約</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <video src="video/hero.mp4" autoplay muted loop playsinline poster="img/menu-takoyaki.jpg"></video>
+  <img class="logo" src="img/logo.png" alt="たこ焼き酒場 なにわ">
+</div>
+
+<!-- ===== タコたちが焼いてます ===== -->
+<div class="tako-band"><img src="img/chara/takoyaki-trio.jpg" alt="鉄板でたこ焼きを焼くタコたち" loading="lazy"></div>
+
+<!-- ===== 看板メニュー ===== -->
+<section class="dark" id="menu">
+  <div class="wrap">
+    <h2 class="sec-title fade">看板メニュー</h2>
+    <div class="menu-grid">
+      <div class="menu-item fade">
+        <img src="img/menu-takoyaki.jpg" alt="たこ焼き">
+        <h3>たこ焼き</h3>
+        <div class="say"><img src="img/chara/stamp1.webp" alt=""><div class="bub">生地には昆布をベースにカツオを足した合わせ出汁。そのまま食べても旨い「だし」と、“ふわとろ”の食感にこだわってるで！</div></div>
+        <p>「たこ焼き」は“ふわとろ”な食感と、そのまま食べても美味しい「だし」にこだわりました。生地には昆布をベースにカツオを加えた合わせ出汁を使用。あっさりながらも旨味が感じられる本場の味わい！</p>
+      </div>
+      <div class="menu-item fade">
+        <img src="img/menu-karaage.jpg" alt="から揚げ">
+        <h3>から揚げ</h3>
+        <div class="say"><img src="img/chara/stamp2.webp" alt=""><div class="bub">手羽元・手羽先・むね肉の三部位。秘伝のだしをたっぷり含ませて、ジューシーに揚げとるんや。</div></div>
+        <p>手羽元、手羽先、むね肉の三部位を使用。手羽先、手羽元は身をギュッと先端に寄せ、むね肉は厚くカットすることで、秘伝のだしを身にたっぷり含ませ、ジューシーな仕上がりに。</p>
+      </div>
+      <div class="menu-item fade">
+        <img src="img/menu-oden.jpg" alt="タコだしおでん">
+        <h3>タコだしおでん</h3>
+        <div class="say"><img src="img/chara/stamp3.webp" alt=""><div class="bub">わしらタコの旨味がしみたダシや。食べ終わったダシにたこ焼きをつけたら、なお旨いで。</div></div>
+        <p>タコの旨味がしみ出したダシでじっくり煮込んだ、心も体も温まるタコだしおでん。たこ焼きの前につまむも良し。食べ終わっただしに、たこ焼きをつけるとなお良し。</p>
+      </div>
+    </div>
+    <p class="menu-more fade"><a class="btn" href="menu.html">メニューをすべて見る</a></p>
+  </div>
+</section>
+
+<!-- ===== 新メニュー（menu.json＝毎朝食べログから更新される「本日のおすすめ」をタコが紹介） ===== -->
+<section id="new-menu">
+  <div class="wrap">
+    <h2 class="sec-title fade">新メニュー</h2>
+    <div class="new-wrap">
+      <img class="tecchan" src="img/chara/yakiage.webp" alt="たこ焼き酒場なにわのタコ">
+      <div>
+        <div class="big-bub fade">今日のおすすめ、紹介するで！ たこ焼きの合間にどうや。</div>
+        <div class="new-list" id="new-list"></div>
+        <p class="menu-more" style="margin-top:20px"><a class="btn solid" href="menu.html">メニューをすべて見る</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="topping-band"><img src="img/chara/topping-lab.jpg" alt="トッピングを研究するタコ" loading="lazy">
+  <div class="say" style="max-width:640px;margin:0 auto;padding:0 16px"><img src="img/chara/stamp4.webp" alt=""><div class="bub">ソース・塩・出汁醤油・ポン酢に、明太マヨ、ネギ塩レモン、ソースキムチ、チーズ…。今日はどの味にする？</div></div>
+</div>
+
+<div class="reserve-band">
+  <img class="yakiage" src="img/chara/yakiage.webp" alt="" loading="lazy">
+  <p>ネット予約なら24時間いつでも</p>
+  <a class="btn" href="https://yoyaku.takoyakinaniwa.com/" target="_blank" rel="noopener">ご予約はこちら</a>
+</div>
+
+<!-- ===== 社員紹介 ===== -->
+<section id="staff">
+  <div class="wrap">
+    <h2 class="sec-title fade">社員紹介</h2>
+    <div class="person">
+      <img class="fade" src="img/staff.jpg" alt="店長 川崎哲季（左）と副店長 大冨健清（右）">
+      <div class="fade">
+        <div class="who">
+          <div class="role">店長（写真左）</div>
+          <h3>川崎 哲季</h3>
+          <div class="career">32歳。前職：居酒屋店長</div>
+          <p>入社わずか1ヶ月で新業態の立ち上げメンバーに抜擢。全メニューの考案を担い、ゼロからブランドを築き上げた立役者。異色の元SEとしての分析力と、圧倒的な食べ歩き経験を武器に、唯一無二の味と楽しさを追求し続けている。</p>
+          <a class="note" href="https://note.com/tempura_oshio/n/n6367b9b56bcf" target="_blank" rel="noopener">“たこ焼き”立ち上げ奮闘記（note）</a>
+        </div>
+        <div class="who">
+          <div class="role">副店長（写真右）</div>
+          <h3>大冨 健清</h3>
+          <div class="career">26歳。前職：自動車整備工場</div>
+          <p>バスケ強豪校出身のゴリゴリ体育会系。明るい接客と、部活で鍛えた抜群のリーダーシップでチームをぐいぐい引っ張る頼れる存在。店長・川崎と二人三脚で現場を盛り上げ、元気と笑顔があふれる店づくりを全力で進行中！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Instagram（公式の埋め込み。新しい投稿は自動で出る） ===== -->
+<section id="instagram" class="washi">
+  <div class="wrap">
+    <h2 class="sec-title fade">Instagram</h2>
+    <div class="insta fade">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/takoyaki_naniwa/" data-instgrm-version="14" style="width:100%;max-width:540px"></blockquote>
+    </div>
+    <p class="center" style="margin-top:24px"><a class="btn solid" href="https://www.instagram.com/takoyaki_naniwa/" target="_blank" rel="noopener">@takoyaki_naniwa をフォロー</a></p>
+  </div>
+</section>
+
+<!-- ===== 店舗詳細 ===== -->
+<section class="dark" id="shop">
+  <div class="wrap">
+    <h2 class="sec-title fade">店舗詳細</h2>
+    <div class="shop">
+      <img class="fade" src="img/store.jpg" alt="たこ焼き酒場 なにわの店内">
+      <div class="info fade">
+        <img class="shop-stamp" src="img/chara/stamp1.webp" alt="" loading="lazy">
+        <img class="logo" src="img/logo.png" alt="たこ焼き酒場 なにわ">
+        <a class="tel" href="tel:0362756730">TEL 03-6275-6730</a>
+        <dl>
+          <dt>住所</dt><dd><a href="https://tabelog.com/tokyo/A1302/A130201/13298448/dtlmap/" target="_blank" rel="noopener">東京都千代田区丸の内1-10-12</a><br>（東京駅丸の内南口から徒歩3分）</dd>
+          <dt>月〜金</dt><dd>15:00 - 23:30（L.O. 23:00）</dd>
+          <dt>土・祝前後</dt><dd>12:00 - 23:00（L.O. 22:30）</dd>
+          <dt>日・祝日</dt><dd>12:00 - 22:00（L.O. 21:30）</dd>
+        </dl>
+        <div class="btns">
+          <a class="btn" href="https://yoyaku.takoyakinaniwa.com/" target="_blank" rel="noopener">ご予約はこちら</a>
+        </div>
+        <div class="btns" style="margin-top:12px">
+          <a class="btn ghost" href="https://tabelog.com/tokyo/A1302/A130201/13298448/" target="_blank" rel="noopener">食べログ</a>
+          <a class="btn ghost" href="https://www.hotpepper.jp/strJ003872441/" target="_blank" rel="noopener">ホットペッパー</a>
+          <a class="btn ghost" href="https://www.instagram.com/takoyaki_naniwa/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="tako-float" href="#new-menu" aria-label="新メニューを見る"><img src="img/chara/yakiage.webp" alt=""><span>新メニューあるで</span></a>
+
+<footer class="site-footer">
+  <div class="foot-stamps"><img src="img/chara/stamp1.webp" alt=""><img src="img/chara/stamp2.webp" alt=""><img src="img/chara/stamp3.webp" alt=""><img src="img/chara/stamp4.webp" alt=""></div>
+  <a href="https://agerucompany-ai.github.io/ageruinc-site/" target="_blank" rel="noopener"><img src="img/ageru.png" alt="AGERU inc."></a>
+  運営：株式会社アゲル
+  <small>© たこ焼き酒場 なにわ</small>
+</footer>
+<script src="store.js"></script>
+<script>
+// 新メニュー：menu.json の「本日のおすすめ」（無ければ写真のある料理の先頭）を 4 品
+(function () {
+  var box = document.getElementById('new-list'); if (!box) return;
+  var base = location.pathname.replace(/[^/]*$/, '');
+  var root = /\/(en|zh-hans|zh-hant|ko)\/$/.test(base) ? base.replace(/(en|zh-hans|zh-hant|ko)\/$/, '') : base;
+  fetch(root + 'menu.json').then(function (r) { return r.json(); }).then(function (d) {
+    var food = (d || []).filter(function (k) { return k.kind === '料理'; })[0] || { categories: [] };
+    var cat = food.categories.filter(function (c) { return /おすすめ|新/.test(c.name); })[0] || food.categories[0] || { items: [] };
+    var esc = function (t) { return String(t || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+    box.innerHTML = cat.items.filter(function (i) { return i.file && !/追加/.test(i.name); }).slice(0, 4).map(function (i) {
+      return '<div class="new-item"><img loading="lazy" src="' + root + 'menu-img/' + esc(i.file) + '" alt="' + esc(i.name) + '"><div><b>' + esc(i.name) + '</b><span>' + esc(i.price) + '</span>' + (i.desc ? '<p>' + esc(i.desc).slice(0, 60) + '</p>' : '') + '</div></div>';
+    }).join('');
+  }).catch(function () { box.style.display = 'none'; });
+})();
+</script>
+<script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>
